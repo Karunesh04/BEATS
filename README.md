@@ -1,2 +1,3 @@
 # BEATS
-A single page  e commerce website for head-sets.
+A single page ecommerce website for head-sets.
+Visit: https://github.com/Karunesh04/BEATS.git
