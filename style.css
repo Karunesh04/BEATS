@@ -3,23 +3,26 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
   font-family: "poppins", sans-serif;
   color: #fff;
+  scroll-behavior: smooth;
 }
+
+
 
 body {
   background-color: #0f0f0f;
-  margin: 0 15vw;
+  margin: 5vw 15vw;
 }
+
 
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #1E1E21;
-
+  background-color: #454A50;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,7 +30,6 @@ body {
   border-radius: 0.8rem;
   border: 0.2rem solid transparent;
   background-clip: content-box;
-
 }
 
 /* NAV_BAR */
@@ -52,7 +54,7 @@ body {
 
 .options {
   display: flex;
-
+  align-items: center;
   list-style: none;
   gap: 40px;
 }
@@ -145,7 +147,7 @@ span {
 
 #social {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 90px;
 }
@@ -165,43 +167,40 @@ span {
 
 img[alt="specs-logo"],
 img[alt="case-logo"] {
-  scale: 0.8;
+  scale: 0.7;
 }
 
 .specs {
   margin: 30px 0 50px;
   height: 80vh;
   display: flex;
-
   align-items: center;
 }
 
 .feature {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   line-height: 25px;
 }
 
 .feature p:last-child {
-  margin-top: 5px;
+  margin-top: 7px;
   color: #bdc0c2;
-
   font-weight: 300;
   width: 70%;
 }
 
 .feature:first-child,
 .feature:last-child {
-  margin-left: 40px;
+  margin-left: 70px;
 }
 
 /* CASE */
 
 .case-details {
   display: flex;
-
   align-items: center;
   width: 65%;
-  margin: 90px 0 50px;
+  margin: 80px 0 50px;
 }
 
 .case-right {
@@ -221,7 +220,7 @@ img[alt="case-logo"] {
 
 #discount {
   background-color: #1e1e21;
-  margin: 50px 0;
+  margin-top: 50px;
   border-radius: 8px;
   padding: 45px 0;
   display: flex;
@@ -231,8 +230,12 @@ img[alt="case-logo"] {
 }
 
 .left {
-  width: 23%;
-  line-height: 28px;
+  width: 30%;
+
+}
+
+.left h3 {
+  font-size: 24px;
 }
 
 .left .dis {
@@ -300,7 +303,7 @@ img[alt="prod-img"] {
 }
 
 .details h4 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -329,14 +332,18 @@ img[alt="beatsLogo"] {
   scale: 1.2;
 }
 
-footer h3,
-h4 {
+footer h4 {
   font-weight: 500;
 }
 
-ul {
+footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+footer ul {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 a {
@@ -358,6 +365,21 @@ a {
   width: 350px;
 }
 
+input {
+  background-color: #181a1b;
+  border: none;
+  width: 50%;
+  height: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
 .email p {
   color: #bdc0c2;
 }
@@ -366,9 +388,9 @@ a {
   display: flex;
   align-items: center;
   background-color: #0f0f0f;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 10px;
-  gap: 20px;
+  gap: 15px;
   cursor: pointer;
 }
 
@@ -386,4 +408,5 @@ a {
 .uparrow {
   position: absolute;
   right: 20px;
+  scale: 0.8;
 }
