@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: "poppins", sans-serif;
   color: #fff;
   scroll-behavior: smooth;
@@ -13,7 +13,7 @@
 
 body {
   background-color: #0f0f0f;
-  margin: 5vw 15vw;
+  margin: 0 15vw;
 }
 
 
@@ -49,14 +49,15 @@ body {
 .right {
   display: flex;
   justify-content: space-between;
-  width: 58%;
+  /* width: 58%; */
+  gap: 40px;
 }
 
 .options {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 40px;
+  gap: 35px;
 }
 
 .options a {
@@ -71,10 +72,10 @@ body {
   background-color: #1e1e21;
   border: none;
   border-radius: 8px;
-  height: 40px;
+  height: 42px;
   width: 110px;
   font-size: 17px;
-  color: #bdc0c2;
+  /* color: #bdc0c2; */
   border-top: #454a50 3px solid;
   border-left: #454a50 3px solid;
   cursor: pointer;
@@ -102,9 +103,10 @@ img[alt="main-img"] {
 }
 
 .onear {
-  margin-left: 40px;
-  height: 65px;
-  width: 320px;
+  margin-left: 8%;
+  /* height: 65px;
+  width: 320px; */
+  scale: 0.8;
 }
 
 .main-right h1 {
@@ -134,7 +136,7 @@ img[alt="main-img"] {
   justify-content: space-around;
   align-items: center;
   width: 60%;
-  padding: 15px 20px;
+  padding: 12px 20px;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -410,3 +412,17 @@ input::placeholder {
   right: 20px;
   scale: 0.8;
 }
+
+/* Media Query for TAB */
+
+/* @media screen and (max-width:1000px) {
+  body {
+    background-color: #fff;
+  }
+} */
+
+/* Media Query for Mobile */
+
+/* @media screen and (max-width:400px){
+
+} */
